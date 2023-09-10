@@ -41,6 +41,11 @@ body {
   background-color: var(--bg-body);
   color: var(--body-text);
   font-size: 1.6rem;
+  max-width: 390px;
+}
+
+section {
+  margin-bottom: 20px;
 }
 
 /* Header */
@@ -102,6 +107,19 @@ body {
   padding-block: 5px;
 }
 
+/* Search form */
+.search-form {
+  margin-top: 20px;
+}
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+input[name="search"] {
+  width: 100%;
+}
+
 /* Common */
 .title {
   color: var(--brand-secondary);
@@ -109,4 +127,19 @@ body {
 }
 .subtitle {
   font-weight: 300;
+}
+
+.container {
+  padding-inline: 20px;
+}
+
+.space {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.bold {
+  font-weight: 700;
 }
