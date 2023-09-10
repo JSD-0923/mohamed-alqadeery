@@ -120,6 +120,55 @@ input[name="search"] {
   width: 100%;
 }
 
+/* Topics */
+.topic-item {
+  width: 350px;
+  background-color: var(--bg-default);
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.topic-item img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.topic-category {
+  font-size: 1.2rem;
+}
+.topic-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stars {
+  margin-top: 30px;
+}
+
+ion-icon:is([name="star"]) {
+  color: goldenrod; /* Set the color for icons with the name "star" */
+}
+ion-icon:is([name="star-half"]) {
+  color: goldenrod; /* Set the color for icons with the name "star" */
+}
+.grey {
+  color: grey;
+  font-weight: lighter;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text {
+  font-weight: bold;
+}
+
+ion-icon:is([name="heart"]) {
+  color: var(--heart-color); /* Set the color for icons with the name "star" */
+}
+
 /* Common */
 .title {
   color: var(--brand-secondary);
