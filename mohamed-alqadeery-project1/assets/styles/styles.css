@@ -113,19 +113,26 @@ section {
   background-color: var(--bg-default);
 }
 
-.triangle-shape {
+.triangle-shape-container {
   display: flex;
+  background-image: linear-gradient(
+    to right top,
+    var(--brand-primary),
+    var(--brand-secondary)
+  );
+  justify-content: center;
+  width: 390px;
 }
-.primary-block {
-  width: 100%;
-  height: 20px;
-  background-color: var(--brand-primary);
+.primary-triangle {
+  height: 2em;
+  border-left: 240px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 2vh solid white;
+  padding-right: 0;
 }
-.secondary-block {
-  width: 100%;
-  height: 20px;
-  background-color: var(--brand-secondary);
-}
+/* .secondary-triangle {
+  
+} */
 
 .welcome-message {
   padding-inline: 10px;
