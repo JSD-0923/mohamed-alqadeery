@@ -48,6 +48,31 @@ section {
   margin-bottom: 20px;
 }
 
+/* Common */
+.title {
+  color: var(--brand-secondary);
+  font-weight: bold;
+}
+.subtitle {
+  font-weight: 300;
+}
+
+.container {
+  padding-inline: 20px;
+}
+
+.space {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-block: 2px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
 /* Header */
 .header {
   padding-block: 20px;
@@ -74,7 +99,7 @@ section {
 
 .btn-header {
   border: 1px solid var(--lines-color); /* Transparent border to reserve space */
-  border-radius: 25%;
+  border-radius: 10px;
   padding: 10px 12px 10px 12px; /* Add padding to see the shadow effect */
 }
 
@@ -116,8 +141,23 @@ section {
   display: inline-block;
 }
 
-input[name="search"] {
+input {
   width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 7px #333;
+  border: 15px solid transparent;
+}
+input[name="search"]::placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+select {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 7px #333;
+  border: 15px solid transparent;
 }
 
 /* Topics */
@@ -167,28 +207,4 @@ ion-icon:is([name="star-half"]) {
 
 ion-icon:is([name="heart"]) {
   color: var(--heart-color); /* Set the color for icons with the name "star" */
-}
-
-/* Common */
-.title {
-  color: var(--brand-secondary);
-  font-weight: bold;
-}
-.subtitle {
-  font-weight: 300;
-}
-
-.container {
-  padding-inline: 20px;
-}
-
-.space {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-}
-
-.bold {
-  font-weight: 700;
 }
