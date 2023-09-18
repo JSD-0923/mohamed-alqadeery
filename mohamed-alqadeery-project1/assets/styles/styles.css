@@ -41,15 +41,14 @@ body {
   background-color: var(--bg-body);
   color: var(--body-text);
   font-size: 1.6rem;
-  max-width: 390px;
 }
 
 section {
   margin-bottom: 20px;
 }
-main {
+/* main {
   width: 100vw;
-}
+} */
 
 /* Common */
 .title {
@@ -124,7 +123,6 @@ main {
     var(--brand-secondary)
   );
   justify-content: center;
-  width: 390px;
 }
 .primary-triangle {
   height: 2em;
@@ -233,7 +231,6 @@ ion-icon:is([name="heart"]) {
     padding-block: 20px;
     background-color: var(--bg-default);
     border-bottom: 1px solid #333;
-    width: 100vw;
   }
 
   .logo {
@@ -259,12 +256,11 @@ ion-icon:is([name="heart"]) {
 
   .block-design {
     min-width: 768px;
-    width: 100vw;
   }
 
-  .triangle-shape-container {
+  /* .triangle-shape-container {
     width: 100vw;
-  }
+  } */
   .primary-triangle {
     height: 2em;
     border-left: 50vw solid transparent;
@@ -331,7 +327,7 @@ ion-icon:is([name="heart"]) {
   }
 
   .footer {
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     justify-content: center;
     align-items: center;
