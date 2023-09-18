@@ -82,6 +82,14 @@ button:hover {
   margin-block: 2px;
 }
 
+.space-sm-g {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  margin-block: 2px;
+}
+
 .bold {
   font-weight: 700;
 }
@@ -200,7 +208,7 @@ select {
   font-weight: bold;
 }
 
-.stars {
+.stars-mt-30 {
   margin-top: 30px;
 }
 

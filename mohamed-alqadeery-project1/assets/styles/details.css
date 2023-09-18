@@ -1,0 +1,93 @@
+/* .container-lg {
+  padding-inline: 40px;
+} */
+
+.container-xlg {
+  padding-inline: 20%;
+  padding-block: 3%;
+}
+
+.topic-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  background-color: #333333;
+  color: #ededed;
+
+  gap: 2em;
+}
+
+.topic-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  flex-grow: 2;
+}
+
+.topic-card-image {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 1em;
+}
+
+.topic-card-image img {
+  width: 100%;
+}
+
+.color-secondary {
+  color: #03c180;
+}
+
+a.author-link {
+  color: blue;
+  text-decoration: underline;
+}
+
+.add-to-favorite {
+  border: 1px solid rgb(216, 216, 216);
+  padding-inline: 0.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.btn-fav {
+  border: 1px solid var(--lines-color); /* Transparent border to reserve space */
+  padding: 10px 12px 10px 12px; /* Add padding to see the shadow effect */
+  background-color: #03c180;
+  color: #ffffff;
+}
+
+.light-grey {
+  color: rgb(162, 159, 159);
+}
+
+.list-card {
+  background-color: var(--bg-default);
+  border: 1px solid rgb(162, 159, 159);
+  padding: 1.5em;
+  border-radius: 10px;
+}
+
+.card-title {
+  border-bottom: 1px solid rgb(162, 159, 159);
+  padding-block: 0.2em;
+}
+
+.card-body li {
+  padding-block: 0.6em;
+  font-weight: 500;
+  display: flex;
+  gap: 0.5em;
+}
+
+.card-body li:not(:last-child) {
+  border-bottom: 1px solid rgb(162, 159, 159);
+}
+
+.card-body li ion-icon {
+  color: var(--brand-secondary);
+}
