@@ -10,3 +10,13 @@
   --heart-color: #dc143c;
   --font-family: Nunito Sans, sans-serif;
 }
+
+.dark {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg-default: #1a1a1a;
+  --bg-body: #282828;
+  --lines-color: #000000;
+  --body-text: #ededed;
+  --heart-color: #dc143c;
+}
