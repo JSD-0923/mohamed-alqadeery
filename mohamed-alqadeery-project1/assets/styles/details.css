@@ -4,13 +4,12 @@
 
 .container-xlg {
   padding-inline: 20%;
-  padding-block: 3%;
 }
 
 .topic-about {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   background-color: #333333;
   color: #ededed;
 
@@ -27,6 +26,9 @@
   background-color: #ffffff;
   color: #333333;
   padding: 1em;
+  position: relative;
+  top: 9em;
+  left: 4em;
 }
 
 .topic-card-image img {
@@ -116,6 +118,8 @@ a.author-link {
     color: #ededed;
 
     gap: 2em;
+    padding-block: 1em;
+    text-align: center;
   }
 
   .topic-card-image {
@@ -123,6 +127,7 @@ a.author-link {
     color: #333333;
     padding: 1em;
     text-align: center;
+    position: static;
   }
 
   .topic-card-image img {
