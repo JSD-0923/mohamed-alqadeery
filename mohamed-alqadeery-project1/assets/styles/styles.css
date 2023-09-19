@@ -129,7 +129,7 @@ select {
 .space-nogap {
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-block: 2px;
 }
 
@@ -216,10 +216,15 @@ select {
   margin-top: 20px;
 }
 
+#searchForm {
+  width: 100%;
+}
+
 input[name="search"] {
   background-color: var(--bg-default);
-  padding: 1em;
+  padding-block: 1em;
   width: 100%;
+  border-right: 1px solid grey;
 
   /* border-radius: 10px; */
   /* box-shadow: 0 0 7px #333; */
@@ -291,6 +296,19 @@ ion-icon:is([name="heart"]) {
   color: var(--heart-color); /* Set the color for icons with the name "star" */
 }
 
+.form-input-sm-40 {
+  width: 40%;
+}
+.form-input-sm-60 {
+  width: 60%;
+}
+.form-input-sm-100 {
+  width: 100%;
+}
+.form-input-sm-50 {
+  width: 50%;
+}
+
 /* Responsive */
 
 @media (min-width: 768px) {
@@ -351,7 +369,7 @@ ion-icon:is([name="heart"]) {
 
   #searchForm {
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
     border: 3px solid rgb(231, 228, 228);
     border-radius: 10px;
   }
@@ -361,7 +379,7 @@ ion-icon:is([name="heart"]) {
     /* border-radius: 10px; */
     /* box-shadow: 0 0 7px #333;
     border: 15px solid transparent; */
-    width: 80%;
+    width: 100%;
   }
   input[name="search"]::placeholder {
     font-size: 1.6rem;
@@ -371,7 +389,7 @@ ion-icon:is([name="heart"]) {
 
   .filter-select {
     /* border-radius: 10px; */
-    width: 150px;
+    width: 100%;
   }
 
   /* select {
@@ -408,5 +426,11 @@ ion-icon:is([name="heart"]) {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .form-input-md-40 {
+    width: 40%;
+  }
+  .form-input-md-60 {
+    width: 60%;
   }
 }
