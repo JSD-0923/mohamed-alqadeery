@@ -51,18 +51,24 @@
         <section class="search-form">
 
             <form id="searchForm">
+
                 <input name="search" placeholder="Search the website..." aria-label="search input" />
-                <div class="space">
-                    <div class="select">
-                        <label for="select-label">Sort by:</label>
+
+                <div class="space-nogap">
+                    <div class="filter-select">
+                        <span class="filter-select-label" aria-label="Select sort by order">Sort by:</span>
                         <select>
-                            <option value="option2" selected>Default</option>
+                            <option value="" selected>Default</option>
+                            <option value="1">Frontend</option>
+                            <option value="2">Backend</option>
                         </select>
                     </div>
-                    <div class="select">
-                        <label for="select-label">Filter by:</label>
+                    <div class="filter-select">
+                        <span class="filter-select-label" aria-label="Select sort by filter">Filter by:</span>
                         <select>
-                            <option value="option2" selected>Default</option>
+                            <option value="" selected>Default</option>
+                            <option value="1">Frontend</option>
+                            <option value="2">Backend</option>
                         </select>
                     </div>
                 </div>
