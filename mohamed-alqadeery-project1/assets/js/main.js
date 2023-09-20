@@ -26,6 +26,8 @@ toggleFavButton.addEventListener("click", (e) => {
   e.preventDefault();
   toggleFavorites();
 });
+
+//to hide canvas when clicking on it
 offCanvas.addEventListener("click", (e) => {
   let isCardItem = e.target.classList.contains("cards-item");
   console.log(e.target);
