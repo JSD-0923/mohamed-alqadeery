@@ -70,6 +70,12 @@ input {
   /* Add any additional styles you need */
 }
 
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
 select {
   padding: 0;
   background: none;
@@ -246,7 +252,7 @@ input[name="search"]::placeholder {
 /* Topics */
 .topic-item {
   background-color: var(--bg-default);
-  padding: 15px;
+
   margin-bottom: 10px;
   transition: transform 0.3s ease-in-out; /* Add a transition for smooth scaling */
 }
@@ -256,7 +262,6 @@ input[name="search"]::placeholder {
 }
 .topic-item img {
   width: 100%;
-  margin-bottom: 15px;
 }
 
 .topic-category {
@@ -269,6 +274,10 @@ input[name="search"]::placeholder {
 
 .stars-mt-30 {
   margin-top: 30px;
+}
+
+.p-1 {
+  padding: 10px;
 }
 
 ion-icon:is([name="star"]) {
@@ -489,10 +498,10 @@ ion-icon:is([name="heart"]) {
     display: flex;
     flex-wrap: wrap;
     margin-top: 1em;
-    gap: 2em;
+    gap: 10px;
   }
   .topic-item {
-    width: 23%;
+    width: calc(25% - 10px);
     display: flex;
     flex-direction: column;
     border-radius: 1em;
@@ -501,9 +510,11 @@ ion-icon:is([name="heart"]) {
 
   .topic-item img {
     width: 100%;
+    min-height: 226px;
     height: 100%;
     align-self: center;
     justify-self: center;
+    border-radius: 10px 10px 0 0;
   }
 
   .footer {
