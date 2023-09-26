@@ -161,6 +161,7 @@ select {
 .logo {
   font-size: 2rem;
   color: var(--brand-primary);
+  font-weight: bold;
 }
 
 .header-container {
@@ -240,6 +241,7 @@ input[name="search"]::placeholder {
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--body-text);
+  padding-left: 0.5em;
 }
 
 /* select {
@@ -328,7 +330,7 @@ ion-icon:is([name="heart"]) {
   height: 270px;
   background-color: var(--bg-body);
   color: var(--body-text);
-  border: 1px solid black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   /* display: none;  */
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -415,7 +417,6 @@ ion-icon:is([name="heart"]) {
   .header {
     padding-block: 20px;
     background-color: var(--bg-default);
-    border-bottom: 1px solid #333;
   }
 
   .logo {
@@ -477,7 +478,7 @@ ion-icon:is([name="heart"]) {
   input[name="search"]::placeholder {
     font-size: 1.6rem;
     font-weight: 400;
-    padding-left: 0.5em;
+    padding-left: 1em;
   }
 
   .filter-select {

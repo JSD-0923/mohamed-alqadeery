@@ -25,7 +25,7 @@
 .topic-card-image {
   background-color: #ffffff;
   color: #333333;
-  padding: 1em;
+
   position: relative;
   top: 9em;
   left: 4em;
@@ -33,6 +33,7 @@
 
 .topic-card-image img {
   width: 100%;
+  padding: 2px;
 }
 
 .color-secondary {
@@ -40,8 +41,9 @@
 }
 
 a.author-link {
-  color: blue;
+  color: var(--brand-primary);
   text-decoration: underline;
+  font-weight: 600;
 }
 
 .add-to-favorite {
@@ -126,22 +128,18 @@ a.author-link {
   .topic-card-image {
     background-color: #ffffff;
     color: #333333;
-    padding: 1em;
+
     text-align: center;
     position: static;
   }
 
   .topic-card-image img {
     width: 100%;
+    padding: 2px;
   }
 
   .color-secondary {
     color: #03c180;
-  }
-
-  a.author-link {
-    color: blue;
-    text-decoration: underline;
   }
 
   .add-to-favorite {
