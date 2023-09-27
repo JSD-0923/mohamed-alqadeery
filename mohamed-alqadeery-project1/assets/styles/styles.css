@@ -191,31 +191,42 @@ select {
 
 .block-design {
   background-color: var(--bg-default);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
 }
 
-.triangle-shape-container {
-  display: flex;
+.primary-triangle {
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 0 25%);
   background-image: linear-gradient(
-    to right top,
+    to right,
     var(--brand-primary),
     var(--brand-secondary)
   );
-  justify-content: center;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
 }
-.primary-triangle {
-  height: 2em;
-  border-left: 240px solid transparent;
-  border-right: 150px solid transparent;
-  border-bottom: 2vh solid var(--bg-default);
-  padding-right: 0;
+
+.secondary-triangle {
+  position: absolute;
+  clip-path: polygon(100% 0%, 0% 0%, 100% 25%);
+  background-image: linear-gradient(
+    to left,
+    var(--brand-secondary),
+    var(--brand-primary)
+  );
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
-/* .secondary-triangle {
-  
-} */
 
 .welcome-message {
-  padding-inline: 10px;
-  padding-block: 5px;
+  padding-inline: 14px;
+  padding-top: 10px;
 }
 
 /* Search form */
@@ -440,18 +451,35 @@ ion-icon:is([name="heart"]) {
 
   /* Design block */
 
-  /* .triangle-shape-container {
-    width: 100vw;
-  } */
-  .primary-triangle {
-    height: 2em;
-    border-left: 45vw solid transparent;
-    border-right: 45vw solid transparent;
-    border-bottom: 2vh solid var(--bg-default);
-  }
   /* .secondary-triangle {
   
 } */
+
+  .primary-triangle {
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 0 45%);
+    background-image: linear-gradient(
+      to right,
+      var(--brand-primary),
+      var(--brand-secondary)
+    );
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .secondary-triangle {
+    position: absolute;
+    clip-path: polygon(100% 0%, 0% 0%, 100% 45%);
+    background-image: linear-gradient(
+      to left,
+      var(--brand-secondary),
+      var(--brand-primary)
+    );
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
 
   .welcome-message {
     padding-inline: 10px;
