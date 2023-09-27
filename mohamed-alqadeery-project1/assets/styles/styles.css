@@ -99,6 +99,10 @@ select {
   color: var(--body-text);
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
 /* #searchForm input {
   flex-grow: 1;
 } */
@@ -343,10 +347,12 @@ ion-icon:is([name="heart"]) {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   padding-block: 1em;
+  pointer-events: none;
 }
 
 .off-canvas.active {
   opacity: 1;
+  pointer-events: auto;
 }
 
 .cards-list {
