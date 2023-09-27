@@ -70,12 +70,6 @@ input {
   /* Add any additional styles you need */
 }
 
-.layout {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-}
-
 select {
   padding: 0;
   background: none;
@@ -123,6 +117,8 @@ select {
 
 .container {
   padding-inline: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .space {
@@ -337,7 +333,8 @@ ion-icon:is([name="heart"]) {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  min-width: 100vw;
+  width: 100vw;
   height: 270px;
   background-color: var(--bg-body);
   color: var(--body-text);
