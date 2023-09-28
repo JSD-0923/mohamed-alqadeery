@@ -25,9 +25,8 @@
 .topic-card-image {
   background-color: #ffffff;
   color: #333333;
-
   position: relative;
-  top: 9em;
+  top: 3em;
   left: 4em;
 }
 
@@ -36,6 +35,9 @@
   padding: 2px;
 }
 
+.topic-about .container-xlg {
+  max-width: 1400px;
+}
 .color-secondary {
   color: #03c180;
 }
