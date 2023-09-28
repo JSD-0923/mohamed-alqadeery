@@ -514,22 +514,10 @@ ion-icon:is([name="heart"]) {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 
-  input[name="search"] {
-    /* background-color: var(--bg-default); */
-    /* border-radius: 10px; */
-    /* box-shadow: 0 0 7px #333;
-    border: 15px solid transparent; */
-    /* width: 100%; */
-  }
   input[name="search"]::placeholder {
     font-size: 1.6rem;
     font-weight: 400;
     padding-left: 1em;
-  }
-
-  .filter-select {
-    /* border-radius: 10px; */
-    /* width: 100%; */
   }
 
   /* select {
