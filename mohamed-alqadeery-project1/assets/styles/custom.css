@@ -224,11 +224,6 @@ select {
   z-index: 1;
 }
 
-.welcome-message {
-  padding-inline: 14px;
-  padding-top: 10px;
-}
-
 /* Search form */
 .search-form-section {
   margin-top: 20px;
@@ -278,7 +273,7 @@ ion-icon[name="search-outline"] {
   background-color: var(--bg-default);
   padding: 0;
   max-height: 270px;
-
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: transform 0.3s ease-in-out; /* Add a transition for smooth scaling */
 }
 
@@ -474,11 +469,7 @@ ion-icon:is([name="heart"]) {
   .primary-triangle {
     position: absolute;
     clip-path: polygon(0 0, 100% 0, 0 45%);
-    background-image: linear-gradient(
-      to right,
-      var(--brand-primary),
-      var(--brand-secondary)
-    );
+    background-image: linear-gradient(to right, var(--brand-primary), #04a28f);
     height: 100%;
     width: 100%;
     z-index: 2;
@@ -495,14 +486,6 @@ ion-icon:is([name="heart"]) {
     height: 100%;
     width: 100%;
     z-index: 1;
-  }
-
-  .welcome-message {
-    padding-inline: 10px;
-    padding-block: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   input[name="search"]::placeholder {
